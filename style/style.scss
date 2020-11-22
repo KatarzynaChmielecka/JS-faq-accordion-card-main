@@ -1,0 +1,18 @@
+$primaryFontFamily:'Kumbh Sans',
+sans-serif;
+$primaryFontSize:12px;
+
+$Text-Very-dark-desaturated-blue:#1d1e35;
+$Text-Soft-red:#f47c57;
+$Text-Very-dark-grayish-blue: #4a4b5e;
+$Text-Dark-grayish-blue: #787887;
+
+$Background-Soft-violet: #af67e9;
+$Background-Soft-blue: #6565e7;
+
+$Dividers-Light-grayish-blue: #e7e7e9;
+
+body {
+    font-family: $primaryFontFamily;
+    font-size: $primaryFontSize;
+}
