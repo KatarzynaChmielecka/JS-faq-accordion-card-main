@@ -36,26 +36,65 @@ button {
     width: 920px;
     height: 510px;
     background: #fff;
+    background-image: url("../images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: -575px -270px;
     border-radius: 20px;
     display: flex;
     justify-content: flex-end;
 
+
+    .wrapper-images {
+        height: 100%;
+        width: 50%;
+        position: relative;
+        background-image: url(../images/illustration-woman-online-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: -100px;
+
+
+        .box {
+            position: absolute;
+            transform: translate(-70px, 21%);
+
+
+        }
+    }
+
     .wrapper-content {
-        width: 350px;
+        width: 50%;
 
         .accordion {
             width: 100%;
             display: flex;
             justify-content: space-between;
-            border-bottom: 1px solid $Dividers-Light-grayish-blue;
+            // border-bottom: 1px solid $Dividers-Light-grayish-blue;
+            color: $Text-Very-dark-grayish-blue;
+
+            &:hover {
+                color: $Text-Soft-red;
+            }
+
+            &:focus {
+                font-weight: 700;
+                color: $Text-Very-dark-desaturated-blue;
+                // font-size: 20px;
+                outline: none;
+            }
+        }
+
+        h1 {
+            color: $Text-Very-dark-desaturated-blue;
+            font-weight: 700;
         }
 
         .panel {
             display: none;
+            color: $Text-Dark-grayish-blue;
         }
 
         .wrapper-accordion {
-            border-bottom:1px $Dividers-Light-grayish-blue  solid;
+            border-bottom: 1px $Dividers-Light-grayish-blue solid;
         }
     }
 }

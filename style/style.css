@@ -442,6 +442,9 @@ button {
   width: 920px;
   height: 510px;
   background: #fff;
+  background-image: url("../images/bg-pattern-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: -575px -270px;
   border-radius: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -451,8 +454,23 @@ button {
           justify-content: flex-end;
 }
 
+.wrapper .wrapper-images {
+  height: 100%;
+  width: 50%;
+  position: relative;
+  background-image: url(../images/illustration-woman-online-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: -100px;
+}
+
+.wrapper .wrapper-images .box {
+  position: absolute;
+  -webkit-transform: translate(-70px, 21%);
+          transform: translate(-70px, 21%);
+}
+
 .wrapper .wrapper-content {
-  width: 350px;
+  width: 50%;
 }
 
 .wrapper .wrapper-content .accordion {
@@ -463,11 +481,27 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border-bottom: 1px solid #e7e7e9;
+  color: #4a4b5e;
+}
+
+.wrapper .wrapper-content .accordion:hover {
+  color: #f47c57;
+}
+
+.wrapper .wrapper-content .accordion:focus {
+  font-weight: 700;
+  color: #1d1e35;
+  outline: none;
+}
+
+.wrapper .wrapper-content h1 {
+  color: #1d1e35;
+  font-weight: 700;
 }
 
 .wrapper .wrapper-content .panel {
   display: none;
+  color: #787887;
 }
 
 .wrapper .wrapper-content .wrapper-accordion {
