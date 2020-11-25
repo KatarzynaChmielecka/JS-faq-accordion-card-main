@@ -38,7 +38,7 @@ button {
     background: #fff;
     background-image: url("../images/bg-pattern-desktop.svg");
     background-repeat: no-repeat;
-    background-position: -575px -270px;
+    background-position: -575px -295px;
     border-radius: 20px;
     display: flex;
     justify-content: flex-end;
@@ -50,12 +50,12 @@ button {
         position: relative;
         background-image: url("../images/illustration-woman-online-desktop.svg");
         background-repeat: no-repeat;
-        background-position: -100px;
+        background-position: -83px 70px;
 
 
         .box {
             position: absolute;
-            transform: translate(-70px, 21%);
+            transform: translate(-130px, 205px);
 
 
         }
