@@ -56,45 +56,69 @@ button {
         .box {
             position: absolute;
             transform: translate(-130px, 205px);
-
-
         }
     }
 
     .wrapper-content {
-        width: 50%;
+        width: 350px;
+        margin: 0 95px 0 15px;
 
         .accordion {
             width: 100%;
             display: flex;
             justify-content: space-between;
-            // border-bottom: 1px solid $Dividers-Light-grayish-blue;
             color: $Text-Very-dark-grayish-blue;
+            font-weight: 400;
+            font-size: 14px;
+            padding: 0 15px 0 0;
+            outline: transparent;
 
             &:hover {
                 color: $Text-Soft-red;
             }
 
-            &:focus {
+            &.active {
                 font-weight: 700;
                 color: $Text-Very-dark-desaturated-blue;
-                // font-size: 20px;
-                outline: none;
+
+                img {
+                    transform: rotate(180deg);
+                }
             }
         }
 
         h1 {
+            font-size: 33px;
             color: $Text-Very-dark-desaturated-blue;
             font-weight: 700;
+            margin: 70px 0 20px 0;
         }
 
         .panel {
             display: none;
             color: $Text-Dark-grayish-blue;
+
+
+        }
+
+        .panel.show {
+            display: block;
+            margin: 10px 0 0 0;
+            line-height: 1.5;
         }
 
         .wrapper-accordion {
             border-bottom: 1px $Dividers-Light-grayish-blue solid;
+            padding: 20px 0 20px 0;
         }
+    }
+}
+
+.attribution {
+    padding: 20px 0 0 0;
+    color: #9acd32;
+
+    a {
+        color: inherit;
     }
 }

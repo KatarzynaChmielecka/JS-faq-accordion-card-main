@@ -470,7 +470,8 @@ button {
 }
 
 .wrapper .wrapper-content {
-  width: 50%;
+  width: 350px;
+  margin: 0 95px 0 15px;
 }
 
 .wrapper .wrapper-content .accordion {
@@ -482,21 +483,31 @@ button {
       -ms-flex-pack: justify;
           justify-content: space-between;
   color: #4a4b5e;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 0 15px 0 0;
+  outline: transparent;
 }
 
 .wrapper .wrapper-content .accordion:hover {
   color: #f47c57;
 }
 
-.wrapper .wrapper-content .accordion:focus {
+.wrapper .wrapper-content .accordion.active {
   font-weight: 700;
   color: #1d1e35;
-  outline: none;
+}
+
+.wrapper .wrapper-content .accordion.active img {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .wrapper .wrapper-content h1 {
+  font-size: 33px;
   color: #1d1e35;
   font-weight: 700;
+  margin: 70px 0 20px 0;
 }
 
 .wrapper .wrapper-content .panel {
@@ -504,7 +515,23 @@ button {
   color: #787887;
 }
 
+.wrapper .wrapper-content .panel.show {
+  display: block;
+  margin: 10px 0 0 0;
+  line-height: 1.5;
+}
+
 .wrapper .wrapper-content .wrapper-accordion {
   border-bottom: 1px #e7e7e9 solid;
+  padding: 20px 0 20px 0;
+}
+
+.attribution {
+  padding: 20px 0 0 0;
+  color: #9acd32;
+}
+
+.attribution a {
+  color: inherit;
 }
 /*# sourceMappingURL=style.css.map */
