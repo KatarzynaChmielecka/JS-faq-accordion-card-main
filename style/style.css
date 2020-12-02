@@ -100,7 +100,8 @@ a {
   * Improve readability of focused elements when they are also in an
   * active/hover state.
   */
-a:active, a:hover {
+a:active,
+a:hover {
   outline: 0;
 }
 
@@ -202,7 +203,7 @@ figure {
   */
 hr {
   -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   height: 0;
 }
 
@@ -321,7 +322,7 @@ input {
 input[type="checkbox"],
 input[type="radio"] {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */
@@ -345,7 +346,7 @@ input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
   -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   /* 2 */
 }
 
@@ -419,15 +420,15 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
   background-image: linear-gradient(#af67e9, #6565e7);
 }
@@ -450,8 +451,8 @@ button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 .wrapper .wrapper-images {
@@ -466,41 +467,12 @@ button {
 .wrapper .wrapper-images .box {
   position: absolute;
   -webkit-transform: translate(-130px, 205px);
-          transform: translate(-130px, 205px);
+  transform: translate(-130px, 205px);
 }
 
 .wrapper .wrapper-content {
   width: 350px;
   margin: 0 95px 0 15px;
-}
-
-.wrapper .wrapper-content .accordion {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  color: #4a4b5e;
-  font-weight: 400;
-  font-size: 14px;
-  padding: 0 15px 0 0;
-  outline: transparent;
-}
-
-.wrapper .wrapper-content .accordion:hover {
-  color: #f47c57;
-}
-
-.wrapper .wrapper-content .accordion.active {
-  font-weight: 700;
-  color: #1d1e35;
-}
-
-.wrapper .wrapper-content .accordion.active img {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
 }
 
 .wrapper .wrapper-content h1 {
@@ -510,20 +482,49 @@ button {
   margin: 70px 0 20px 0;
 }
 
-.wrapper .wrapper-content .panel {
+.wrapper .wrapper-content .wrapper-accordion {
+  border-bottom: 1px #e7e7e9 solid;
+  padding: 20px 0 20px 0;
+}
+
+.wrapper .wrapper-content .wrapper-accordion .accordion {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  color: #4a4b5e;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 0 15px 0 0;
+  outline: transparent;
+}
+
+.wrapper .wrapper-content .wrapper-accordion .accordion:hover {
+  color: #f47c57;
+}
+
+.wrapper .wrapper-content .wrapper-accordion .accordion:focus {
+  font-weight: 700;
+  color: #1d1e35;
+}
+
+.wrapper .wrapper-content .wrapper-accordion .accordion:focus img {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.wrapper .wrapper-content .wrapper-accordion .panel {
   display: none;
   color: #787887;
 }
 
-.wrapper .wrapper-content .panel.show {
+.wrapper .wrapper-content .wrapper-accordion .panel.active {
   display: block;
   margin: 10px 0 0 0;
   line-height: 1.5;
-}
-
-.wrapper .wrapper-content .wrapper-accordion {
-  border-bottom: 1px #e7e7e9 solid;
-  padding: 20px 0 20px 0;
 }
 
 .attribution {
@@ -534,4 +535,5 @@ button {
 .attribution a {
   color: inherit;
 }
+
 /*# sourceMappingURL=style.css.map */
